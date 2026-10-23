@@ -1,0 +1,35 @@
+### Get all product category links
+
+GET http://localhost:5000/api/product_categories
+Content-Type: application/json
+
+### Get product category with id
+
+GET http://localhost:5000/api/product_categories/27
+Content-Type: application/json
+
+### Create product category link
+
+POST http://localhost:5000/api/product_categories
+Content-Type: application/json
+
+{
+  "product_id": 1,
+  "category_id": 1
+}
+
+### Update product category link
+
+PUT http://localhost:5000/api/product_categories
+Content-Type: application/json
+
+{
+  "id": 1,
+  "product_id": 1,
+  "category_id": 2
+}
+
+### Delete product category link
+
+DELETE http://localhost:5000/api/product_categories/1
+Content-Type: application/json

@@ -1,0 +1,37 @@
+### Get all stores
+
+GET http://localhost:5000/api/stores
+Content-Type: application/json
+
+### Get store with id
+
+GET http://localhost:5000/api/stores/1
+Content-Type: application/json
+
+### Create store
+
+POST http://localhost:5000/api/stores
+Content-Type: application/json
+
+{
+  "code": "store-ny-01",
+  "name": "New York Store",
+  "address": "123 Example Street, New York"
+}
+
+### Update store
+
+PUT http://localhost:5000/api/stores
+Content-Type: application/json
+
+{
+  "id": 1,
+  "code": "store-ny-01",
+  "name": "New York Store",
+  "address": "456 Example Street, New York"
+}
+
+### Delete store with id
+
+DELETE http://localhost:5000/api/stores/1
+Content-Type: application/json

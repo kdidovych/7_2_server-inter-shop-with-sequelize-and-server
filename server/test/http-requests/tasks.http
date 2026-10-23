@@ -1,0 +1,24 @@
+### Get all entities data (up to 10 rows)
+
+GET http://localhost:5000/tasks/1
+Content-Type: text/html; charset=utf-8
+
+### Get all entities data (from middle of table)
+
+GET http://localhost:5000/tasks/2
+Content-Type: text/html; charset=utf-8
+
+### Get data for several specific attributes
+
+GET http://localhost:5000/tasks/3
+Content-Type: text/html; charset=utf-8
+
+### Delete orders by codes [ORD-1002,ORD-1003]
+
+GET http://localhost:5000/tasks/4
+Content-Type: text/html; charset=utf-8
+
+### Reset customers password if not set
+
+GET http://localhost:5000/tasks/5
+Content-Type: text/html; charset=utf-8

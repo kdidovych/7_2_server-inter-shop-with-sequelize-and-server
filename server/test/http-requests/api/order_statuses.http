@@ -1,0 +1,35 @@
+### Get all order statuses
+
+GET http://localhost:5000/api/order_statuses
+Content-Type: application/json
+
+### Get order status with id
+
+GET http://localhost:5000/api/order_statuses/1
+Content-Type: application/json
+
+### Create order status
+
+POST http://localhost:5000/api/order_statuses
+Content-Type: application/json
+
+{
+  "code": "processing",
+  "label": "Processing"
+}
+
+### Update order status
+
+PUT http://localhost:5000/api/order_statuses
+Content-Type: application/json
+
+{
+  "id": 1,
+  "code": "processing",
+  "label": "Processing"
+}
+
+### Delete order status with id
+
+DELETE http://localhost:5000/api/order_statuses/1
+Content-Type: application/json

@@ -1,0 +1,45 @@
+### Get all products
+
+GET http://localhost:5000/api/products
+Content-Type: application/json
+
+### Get product with id
+
+GET http://localhost:5000/api/products/1
+Content-Type: application/json
+
+### Create product
+
+POST http://localhost:5000/api/products
+Content-Type: application/json
+
+{
+  "sku": "SKU-1001",
+  "name": "Example Product",
+  "description": "Example product description",
+  "model_id": 1,
+  "price": 19.99,
+  "is_enabled": true,
+  "type_id": 1
+}
+
+### Update product
+
+PUT http://localhost:5000/api/products
+Content-Type: application/json
+
+{
+  "id": 1,
+  "sku": "SKU-1001",
+  "name": "Example Product",
+  "description": "Updated product description",
+  "model_id": 1,
+  "price": 19.99,
+  "is_enabled": true,
+  "type_id": 1
+}
+
+### Delete product with id
+
+DELETE http://localhost:5000/api/products/1
+Content-Type: application/json

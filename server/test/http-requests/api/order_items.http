@@ -1,0 +1,39 @@
+### Get all order items
+
+GET http://localhost:5000/api/order_items
+Content-Type: application/json
+
+### Get order item with id
+
+GET http://localhost:5000/api/order_items/1
+Content-Type: application/json
+
+### Create order item
+
+POST http://localhost:5000/api/order_items
+Content-Type: application/json
+
+{
+  "order_id": 1,
+  "product_id": 1,
+  "amount": 2,
+  "price": 19.99
+}
+
+### Update order item
+
+PUT http://localhost:5000/api/order_items
+Content-Type: application/json
+
+{
+  "id": 1,
+  "order_id": 1,
+  "product_id": 1,
+  "amount": 3,
+  "price": 19.99
+}
+
+### Delete order item with id
+
+DELETE http://localhost:5000/api/order_items/1
+Content-Type: application/json

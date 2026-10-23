@@ -1,0 +1,37 @@
+### Get all product models
+
+GET http://localhost:5000/api/product_models
+Content-Type: application/json
+
+### Get product model with id
+
+GET http://localhost:5000/api/product_models/1
+Content-Type: application/json
+
+### Create product model
+
+POST http://localhost:5000/api/product_models
+Content-Type: application/json
+
+{
+  "title": "Example Model",
+  "brand_id": 1,
+  "description": "Example model description"
+}
+
+### Update product model
+
+PUT http://localhost:5000/api/product_models
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "Example Model",
+  "brand_id": 1,
+  "description": "Updated model description"
+}
+
+### Delete product model with id
+
+DELETE http://localhost:5000/api/product_models/1
+Content-Type: application/json

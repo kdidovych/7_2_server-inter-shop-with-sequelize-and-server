@@ -1,0 +1,51 @@
+### set Avatar for customer 3
+
+POST http://localhost:5000/avatar
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="id"
+
+3
+--WebAppBoundary
+Content-Disposition: form-data; name="avatar"; filename="img.png"
+Content-Type: image/png
+
+< ./img/img.png
+--WebAppBoundary--
+
+
+
+### set Avatar for customer 4
+
+POST http://localhost:5000/avatar
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="id"
+
+4
+--WebAppBoundary
+Content-Disposition: form-data; name="avatar"; filename="img.png"
+Content-Type: image/png
+
+< ./img/img_1.png
+--WebAppBoundary--
+
+
+
+### set Avatar for customer 5
+
+POST http://localhost:5000/avatar
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="id"
+
+5
+--WebAppBoundary
+Content-Disposition: form-data; name="avatar"; filename="img.png"
+Content-Type: image/png
+
+< ./img/img_2.png
+--WebAppBoundary--

@@ -1,0 +1,41 @@
+### Get all orders
+
+GET http://localhost:5000/api/orders
+Content-Type: application/json
+
+### Get order with id
+
+GET http://localhost:5000/api/orders/1
+Content-Type: application/json
+
+### Create order
+
+POST http://localhost:5000/api/orders
+Content-Type: application/json
+
+{
+  "code": "ORDER-1001",
+  "customer_id": 1,
+  "amount": 39.98,
+  "is_paid": false,
+  "status_id": 1
+}
+
+### Update order
+
+PUT http://localhost:5000/api/orders
+Content-Type: application/json
+
+{
+  "id": 1,
+  "code": "ORDER-1001",
+  "customer_id": 1,
+  "amount": 39.98,
+  "is_paid": false,
+  "status_id": 1
+}
+
+### Delete order with id
+
+DELETE http://localhost:5000/api/orders/1
+Content-Type: application/json

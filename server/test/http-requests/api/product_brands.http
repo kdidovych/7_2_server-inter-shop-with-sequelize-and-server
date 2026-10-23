@@ -1,0 +1,37 @@
+### Get all product brands
+
+GET http://localhost:5000/api/product_brands
+Content-Type: application/json
+
+### Get product brand with id
+
+GET http://localhost:5000/api/product_brands/1
+Content-Type: application/json
+
+### Create product brand
+
+POST http://localhost:5000/api/product_brands
+Content-Type: application/json
+
+{
+  "code": "example-brand",
+  "title": "Example Brand",
+  "description": "Example brand description"
+}
+
+### Update product brand
+
+PUT http://localhost:5000/api/product_brands
+Content-Type: application/json
+
+{
+  "id": 1,
+  "code": "example-brand",
+  "title": "Example Brand",
+  "description": "Updated brand description"
+}
+
+### Delete product brand with id
+
+DELETE http://localhost:5000/api/product_brands/1
+Content-Type: application/json
