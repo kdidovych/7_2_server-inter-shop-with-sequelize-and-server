@@ -3,7 +3,7 @@
 # FOR MENTOR
 1. Add configs
 ```
-cp .env.ecxample .env
+cp .env.example .env
 nano .env
 ```
 2. manage db
